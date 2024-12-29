@@ -1,0 +1,36 @@
+.st_contact-info {
+	@include clean-list;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	@include desk-min {
+		gap: 1rem 14.5rem;
+	}
+
+	li {
+		a {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			line-height: 1;
+			color: var(--white);
+			transition: var(--st);
+			font-size: 16px;
+			line-height: 1.2;
+
+			@include desk-min {
+				font-size: 19px;
+				line-height: 23px;
+			}
+
+			@include md-desk-min {
+				font-size: 19px;
+			}
+		}
+
+		svg {
+			flex: 0 0 20px;
+		}
+	}
+}

@@ -1,0 +1,57 @@
+.st-customers {
+	background: var(--white);
+
+	.st-customers__logos {
+		align-items: center;
+		gap: 6rem 3rem;
+
+		@include limbo-min {
+			display: grid;
+			grid-template-columns: repeat(7, 1fr);
+		}
+
+		img {
+			height: auto;
+		}
+	}
+
+	//mobile
+	@include tab-max {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		.container {
+			overflow: hidden;
+			width: 100%;
+		}
+
+		.st-customers__logos-wrap {
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 100%;
+		}
+
+		.st-customers__logos {
+			display: flex;
+			align-items: center;
+			width: max-content;
+			flex: 1;
+			animation: slide 20s linear infinite;
+			padding-inline: 7px;
+
+			figure {
+				width: 150px;
+			}
+		}
+	}
+
+	@keyframes slide {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-100%);
+		}
+	}
+}

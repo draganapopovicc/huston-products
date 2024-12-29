@@ -1,0 +1,119 @@
+.container {
+	max-width: var(--site-max-width);
+	margin-inline: auto;
+	width: var(--site-width);
+	@include md-desk-min {
+		padding-inline: 13rem;
+	}
+	@include sm-desk-only {
+		padding-inline: 8rem;
+	}
+}
+
+body {
+	font-family: $font-primary;
+
+	@include desk-min {
+		overflow: auto !important;
+	}
+}
+
+button,
+input,
+select,
+textarea,
+a {
+	font-family: $font-primary;
+}
+
+.hidden {
+	position: absolute;
+	z-index: -3;
+	opacity: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: var(--title-line-height);
+}
+
+// Fix user agent spacings
+
+h1,
+h2 {
+	margin-bottom: var(--t-space-1);
+}
+
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: var(--t-space-2);
+}
+
+.title-1 {
+	font-size: var(--font-size-1);
+}
+
+.title-2 {
+	font-size: var(--font-size-2);
+}
+
+.title-3 {
+	font-size: var(--font-size-3);
+}
+
+.title-4 {
+	font-size: var(--font-size-4);
+}
+
+.title-5 {
+	font-size: var(--font-size-5);
+}
+
+.title-6 {
+	font-size: var(--font-size-6);
+}
+
+.st_block {
+	position: relative;
+}
+
+.error404 {
+	article {
+		text-align: center;
+		@include desk-min {
+			margin-block: 7rem;
+		}
+		img {
+			width: auto;
+			max-width: 30rem;
+		}
+		h1 {
+			font-size: 20rem;
+		}
+		h2 {
+			font-size: 5rem;
+		}
+		.text404 {
+			font-size: 30px;
+			margin-block: var(--space-4);
+		}
+		@include mob-only {
+			h1 {
+				font-size: 15rem;
+			}
+			.text404 {
+				font-size: 25px;
+			}
+		}
+
+		.btn-1 {
+			display: inline-flex;
+		}
+	}
+}

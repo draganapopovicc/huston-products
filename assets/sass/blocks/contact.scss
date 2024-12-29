@@ -1,0 +1,347 @@
+.st-contact-wrap {
+	@include flex-col;
+	gap: 10rem;
+
+	@include limbo-min {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	@include md-desk-min {
+		width: 95%;
+	}
+
+	.b-title.b-title-section {
+		align-items: flex-start;
+		text-align: left;
+
+		@include md-desk-min {
+			width: 95%;
+		}
+	}
+
+	.wpforms-submit-container {
+		margin-top: 2rem;
+	}
+
+	.st-contact__form-wrapper {
+		@include limbo-min {
+			flex: 0 1 725px;
+		}
+	}
+
+	.st-contact__info {
+		.st-contact__info-title {
+			color: var(--dark);
+			line-height: 1.2;
+			font-weight: 700;
+			margin-bottom: 30px;
+			font-size: 28px;
+
+			@include desk-min {
+				font-size: 33px;
+			}
+		}
+
+		a {
+			color: var(--color-1);
+			font-size: 20px;
+			line-height: 1.3;
+			font-weight: 700;
+			gap: 2rem;
+			transition: var(--st);
+
+			@include mob-only {
+				word-break: break-all;
+			}
+
+			@include desk-min {
+				font-size: 22px;
+			}
+
+			&:hover {
+				color: var(--color-2);
+			}
+
+			svg {
+				flex: unset;
+				flex-shrink: 0;
+				width: 25px;
+				height: 25px;
+			}
+		}
+
+		.st_contact-info {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 3rem;
+		}
+
+		.st-socials {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 3rem;
+			margin-top: 3rem;
+
+			.st_icon {
+				span {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.st-contact__form-shortcode {
+	position: relative;
+
+	div.wpforms-container {
+		margin: 0;
+		form {
+			.wpforms-field-container {
+				.wpforms-layout-row {
+					@include md-desk-min {
+						gap: 5rem;
+					}
+				}
+				.wpforms-field {
+					padding-block: 0 31px;
+
+					&.wpforms-field-pagebreak {
+						padding: 0;
+					}
+
+					.wpforms-field-label {
+						color: var(--color-2);
+						font-weight: 700;
+						font-size: 18px;
+						margin-bottom: 13px;
+
+						.wpforms-required-label {
+							color: var(--color-1);
+							font-weight: 700;
+						}
+					}
+
+					.wpforms-error {
+						margin-top: 7px;
+					}
+
+					.choices {
+						position: relative;
+						&:after {
+							border-style: none;
+							content: "";
+							-webkit-mask: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 32 19" fill="none"><path d="M32 2.84648L29.17 -1.27506e-06L18 11.235L16 13.3467L14 11.235L2.83004 -2.42642e-06L4.37446e-05 2.84647L16 18.9396L32 2.84648Z" fill="currentColor"/></svg>');
+							background: var(--color-1);
+							width: 20px;
+							height: 18px;
+							display: inline-block;
+							-webkit-mask-size: cover;
+							mask-size: cover;
+							position: relative;
+							transition: var(--st);
+							position: absolute;
+							top: 40%;
+							right: 2.5rem;
+						}
+
+						&.is-open {
+							&:after {
+								transform: scaleY(-1);
+								top: 43%;
+							}
+						}
+
+						.choices__button {
+							right: 3rem;
+						}
+					}
+
+					input,
+					textarea,
+					.choices__inner {
+						border-radius: 0;
+						border: 2px solid var(--color-1);
+						padding-inline: 2rem;
+						background: #f3f3f3;
+						font-size: 17px;
+
+						&::placeholder {
+							color: #000;
+						}
+
+						&:focus,
+						&:active {
+							box-shadow: none !important;
+							border-color: var(--color-1) !important;
+							background: var(--white);
+							border-radius: 0 !important;
+							outline: none !important;
+						}
+					}
+
+					textarea {
+						padding: 1.5rem 2rem;
+					}
+
+					.choices__list {
+						padding: 0;
+						font-size: 17px;
+						&.is-active {
+							border: 2px solid var(--color-1) !important;
+							box-shadow: none !important;
+						}
+
+						.choices__item {
+							padding-block: 15px;
+						}
+					}
+
+					input,
+					.choices__inner {
+						height: 50px;
+					}
+
+					textarea {
+						min-height: 17rem;
+						margin-bottom: 0px !important;
+						padding-bottom: 0px !important;
+					}
+				}
+			}
+		}
+
+		button[type="submit"].wpforms-submit,
+		button.wpforms-page-next {
+			@include btn-1;
+			border: none;
+
+			@include mob-only {
+				width: 100%;
+			}
+
+			&:hover {
+				background: #f3f3f3 !important;
+				border-color: var(--color-1);
+				color: var(--color-1) !important;
+			}
+		}
+
+		//Request a Quote common style
+		.wpforms-page-indicator {
+			display: flex !important;
+			padding: 0 !important;
+			text-transform: uppercase;
+			border: 2px solid var(--color-1) !important;
+
+			.wpforms-page-indicator-page {
+				padding: 1rem 2rem;
+				background: var(--white);
+				color: var(--color-1);
+				margin: 0 !important;
+				display: flex !important;
+				gap: 3rem;
+				align-items: center;
+
+				@include tab-min {
+					flex: 1;
+				}
+
+				&.active {
+					background: var(--color-1);
+					color: var(--white);
+					flex: 1;
+
+					.wpforms-page-indicator-page-number {
+						background: var(--white) !important;
+						color: var(--color-1) !important;
+					}
+
+					@include mob-only {
+						&.wpforms-page-indicator-page-1 {
+							.wpforms-page-indicator-page-title {
+								display: block;
+							}
+						}
+
+						&.wpforms-page-indicator-page-2 {
+							&:after {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+
+			.wpforms-page-indicator-page:last-child:after {
+				content: "Quote Details";
+
+				@include mob-only {
+					display: none;
+				}
+			}
+
+			.wpforms-page-indicator-page-title {
+				@include mob-only {
+					display: none;
+				}
+			}
+
+			.wpforms-page-indicator-page-number {
+				background: var(--color-1) !important ;
+				color: var(--white) !important;
+				flex-shrink: 0;
+				margin: 0 !important;
+				display: flex !important;
+				align-items: center !important;
+				justify-content: center !important;
+				width: 35px;
+				height: 35px;
+			}
+
+			.wpforms-page-indicator-page-title,
+			.wpforms-page-indicator-page:last-child:after,
+			.wpforms-page-indicator-page-number {
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 18px;
+			}
+		}
+
+		.wpforms-field.wpforms-field-divider {
+			border: none !important;
+			margin-block: 2rem;
+
+			.wpforms-field-description {
+				color: var(--color-2) !important;
+				line-height: 1.2;
+				font-size: 18px;
+
+				span {
+					color: var(--color-1);
+					font-weight: 700;
+				}
+			}
+		}
+
+		.wpforms-field-layout-columns {
+			align-items: stretch;
+			gap: 31px;
+
+			@include md-desk-min {
+				gap: 5rem;
+			}
+
+			.wpforms-field-textarea {
+				@include flex-col;
+				height: 100%;
+
+				textarea {
+					flex: 1;
+				}
+			}
+		}
+	}
+}

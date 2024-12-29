@@ -1,0 +1,212 @@
+{
+	"key": "group_66efe32b89d06",
+	"title": "Block: Products",
+	"fields": [
+		{
+			"key": "field_66efe32b931ea",
+			"label": "Intro",
+			"name": "",
+			"aria-label": "",
+			"type": "tab",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"placement": "left",
+			"endpoint": 0,
+			"selected": 0
+		},
+		{
+			"key": "field_66efe32b96bea",
+			"label": "Intro",
+			"name": "",
+			"aria-label": "",
+			"type": "message",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "title_message",
+				"id": ""
+			},
+			"message": "",
+			"new_lines": "wpautop",
+			"esc_html": 0
+		},
+		{
+			"key": "field_66efe32b9a607",
+			"label": "Intro",
+			"name": "intro",
+			"aria-label": "",
+			"type": "clone",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"clone": ["field_6603f5a17baea", "field_6346f6d37f098"],
+			"display": "seamless",
+			"layout": "block",
+			"prefix_label": 0,
+			"prefix_name": 0
+		},
+		{
+			"key": "field_66efe32ba1d7a",
+			"label": "Content",
+			"name": "",
+			"aria-label": "",
+			"type": "tab",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"placement": "left",
+			"endpoint": 0,
+			"selected": 0
+		},
+		{
+			"key": "field_66efe32ba5736",
+			"label": "Content",
+			"name": "",
+			"aria-label": "",
+			"type": "message",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "title_message",
+				"id": ""
+			},
+			"message": "The section is automatically populated with the main categories populated <a href=\"/wp-admin/edit-tags.php?taxonomy=product-category&post_type=product\"> here </a>.",
+			"new_lines": "wpautop",
+			"esc_html": 0
+		},
+		{
+			"key": "field_66efe32baccc1",
+			"label": "Settings",
+			"name": "",
+			"aria-label": "",
+			"type": "tab",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"placement": "left",
+			"endpoint": 0,
+			"selected": 0
+		},
+		{
+			"key": "field_66efe32bb08f7",
+			"label": "Settings",
+			"name": "",
+			"aria-label": "",
+			"type": "message",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "title_message",
+				"id": ""
+			},
+			"message": "",
+			"new_lines": "wpautop",
+			"esc_html": 0
+		},
+		{
+			"key": "field_66efe32bb420e",
+			"label": "Background Color",
+			"name": "background_color_products",
+			"aria-label": "",
+			"type": "color_picker",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "50",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"enable_opacity": 0,
+			"return_format": "string",
+			"allow_in_bindings": 0
+		},
+		{
+			"key": "field_66efe32bb7cd1",
+			"label": "Spacing",
+			"name": "spacing",
+			"aria-label": "",
+			"type": "clone",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"clone": ["group_63494c81e30ef"],
+			"display": "seamless",
+			"layout": "block",
+			"prefix_label": 0,
+			"prefix_name": 0
+		},
+		{
+			"key": "field_66efe32bbb87a",
+			"label": "Column",
+			"name": "column",
+			"aria-label": "",
+			"type": "clone",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"clone": ["group_634fd64c175f9"],
+			"display": "seamless",
+			"layout": "block",
+			"prefix_label": 0,
+			"prefix_name": 0
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "block",
+				"operator": "==",
+				"value": "acf/products"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"label_placement": "top",
+	"instruction_placement": "label",
+	"hide_on_screen": "",
+	"active": true,
+	"description": "",
+	"show_in_rest": 0,
+	"modified": 1727609062
+}

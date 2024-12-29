@@ -1,0 +1,66 @@
+.st_home-hero {
+	position: relative;
+
+	@include desk-min {
+		min-height: calc(100svh - 145px);
+	}
+
+	.st_hero__container {
+		@include flex-center;
+		justify-content: center;
+
+		@include desk-min {
+			min-height: calc(100svh - 145px);
+		}
+	}
+
+	.st_home-hero__content {
+		padding-block: 7rem;
+		width: 100%;
+		@include flex-col;
+		gap: 6rem;
+
+		@include tab-min {
+			padding-block: 10rem;
+		}
+	}
+
+	.st_hero__video-wrapper {
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: hsla(0, 0%, 0%, 0.667);
+		}
+
+		video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+	}
+
+	.b-title {
+		max-width: 90rem;
+	}
+
+	.btns {
+		.btn-1 {
+			box-shadow: none;
+		}
+	}
+}

@@ -1,0 +1,125 @@
+.st-products {
+	&:not(.st-products-category) {
+		.container {
+			@include limbo-min {
+				max-width: 2560px;
+				padding-inline: 15px;
+			}
+		}
+	}
+}
+
+.st-products__all {
+	display: grid;
+	gap: 2.5rem;
+}
+
+.st-product {
+	position: relative;
+	overflow: hidden;
+	padding: 8.5rem 6rem;
+	z-index: 2;
+
+	&.st-product--layer {
+		background: rgb(0, 0, 0);
+
+		&:after {
+			@include abs;
+			background: rgba(0, 0, 0, 0.547);
+		}
+	}
+
+	.st-product__link {
+		@include abs;
+		padding: 3rem;
+		z-index: 4;
+		min-height: 50px;
+		min-width: 50px;
+	}
+
+	@include desk-min {
+		padding: 6rem 4rem;
+	}
+
+	&:hover {
+		.st-product__btn {
+			transform: translateY(0);
+		}
+	}
+
+	.st-product__image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+
+		img {
+			transition: 0.6s all;
+			height: 100%;
+			vertical-align: bottom;
+			aspect-ratio: 5/6;
+			transform-origin: center;
+			will-change: transform;
+		}
+	}
+
+	.st-product__desc {
+		position: relative;
+		color: var(--white);
+		padding-bottom: 50px;
+		z-index: 3;
+		text-align: center;
+
+		@include flex-col;
+		gap: 3.5rem;
+
+		@include limbo-min {
+			padding-block: 8rem;
+		}
+	}
+
+	.st-product__title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 1.1;
+		margin-inline: auto;
+		width: 60%;
+
+		@include desk-min {
+			font-size: 38px;
+		}
+
+		@include mob-only {
+			width: 85%;
+		}
+	}
+
+	.st-product__excerpt {
+		line-height: 1.4;
+		@include limbo-max {
+			font-size: 22px;
+		}
+		@include desk-min {
+			font-size: 2.4rem;
+		}
+	}
+
+	.st-product__btn {
+		min-width: unset !important;
+		width: 100%;
+
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		transition: var(--st);
+
+		@include limbo-min {
+			transform: translateY(100%);
+		}
+	}
+}

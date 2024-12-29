@@ -1,0 +1,59 @@
+.st-breadcrumbs {
+	margin-block: 5rem;
+
+	.st-breadcrumbs__wrap {
+		.rank-math-breadcrumb {
+			a,
+			.last {
+				font-weight: 700;
+				color: var(--color-1);
+				font-size: 14px;
+				line-height: 1.5;
+				text-transform: uppercase;
+
+				@include md-desk-min {
+					font-size: 18px;
+					line-height: 21px;
+				}
+			}
+
+			.last {
+				color: var(--dark);
+			}
+
+			span {
+				color: var(--dark);
+			}
+
+			.separator {
+				margin-inline: 5px;
+			}
+		}
+	}
+}
+
+.single-post {
+	.rank-math-breadcrumb {
+		p {
+			a:last-of-type {
+				display: none;
+
+				+ .separator {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.archive {
+	.st-breadcrumbs {
+		margin-bottom: 1rem;
+	}
+}
+
+.single-product {
+	.st-breadcrumbs {
+		margin-bottom: 0;
+	}
+}

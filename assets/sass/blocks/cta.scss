@@ -1,0 +1,37 @@
+.st-cta {
+	background: var(--color-1);
+
+	.st-sta__wrap {
+		@include flex-col;
+		align-items: center;
+		gap: 5rem;
+		background-image: url(../images/logo-footer-mobile.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: left bottom;
+
+		@include desk-min {
+			flex-direction: row;
+			justify-content: space-between;
+			background-position: bottom left;
+			gap: 5rem;
+		}
+
+		@include md-desk-min {
+			background-image: url(../images/logo-footer.png);
+			background-position: unset;
+		}
+	}
+
+	.st-cta__text {
+		font-weight: 700;
+		color: var(--white);
+		text-align: center;
+		line-height: 1.1;
+		font-size: 6.7rem;
+
+		@include md-desk-min {
+			text-align: left;
+		}
+	}
+}

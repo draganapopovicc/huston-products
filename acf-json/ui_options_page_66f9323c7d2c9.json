@@ -1,0 +1,23 @@
+{
+    "key": "ui_options_page_66f9323c7d2c9",
+    "title": "Product FAQ",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Product FAQ",
+    "menu_slug": "faq",
+    "parent_slug": "edit.php?post_type=product",
+    "advanced_configuration": 1,
+    "icon_url": "",
+    "menu_title": "",
+    "position": "",
+    "redirect": false,
+    "description": "",
+    "menu_icon": [],
+    "update_button": "Update",
+    "updated_message": "Options Updated",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1727607481
+}

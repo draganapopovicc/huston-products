@@ -1,0 +1,325 @@
+{
+	"key": "group_64bc44d1d3859",
+	"title": "Settings: General",
+	"fields": [
+		{
+			"key": "field_65eefcc2713fa",
+			"label": "Site Info",
+			"name": "",
+			"aria-label": "",
+			"type": "tab",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"placement": "left",
+			"endpoint": 0,
+			"selected": 0
+		},
+		{
+			"key": "field_65eefcd4713fb",
+			"label": "Site Info",
+			"name": "",
+			"aria-label": "",
+			"type": "message",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "title_message",
+				"id": ""
+			},
+			"message": "",
+			"new_lines": "wpautop",
+			"esc_html": 0
+		},
+		{
+			"key": "field_65eefd02713fd",
+			"label": "Phone",
+			"name": "phone",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "50",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"placeholder": "",
+			"prepend": "",
+			"append": "",
+			"parent_repeater": "field_6690f787b626e"
+		},
+		{
+			"key": "field_65eefcde713fc",
+			"label": "Email",
+			"name": "email",
+			"aria-label": "",
+			"type": "email",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "50",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"placeholder": "",
+			"prepend": "",
+			"append": "",
+			"parent_repeater": "field_6690f787b626e"
+		},
+		{
+			"key": "field_65eefd20713fe",
+			"label": "Address",
+			"name": "address",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "50",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"maxlength": "",
+			"placeholder": "",
+			"prepend": "",
+			"append": "",
+			"parent_repeater": "field_6690f787b626e"
+		},
+		{
+			"key": "field_65eefd29713ff",
+			"label": "Google Map Link",
+			"name": "google_map_link",
+			"aria-label": "",
+			"type": "url",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "50",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "",
+			"placeholder": ""
+		},
+		{
+			"key": "field_66d18dd59ccbc",
+			"label": "Socials",
+			"name": "",
+			"aria-label": "",
+			"type": "tab",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"placement": "top",
+			"endpoint": 0,
+			"selected": 0
+		},
+		{
+			"key": "field_66d18deb9ccbd",
+			"label": "Socials",
+			"name": "",
+			"aria-label": "",
+			"type": "message",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "title_message",
+				"id": ""
+			},
+			"message": "",
+			"new_lines": "wpautop",
+			"esc_html": 0
+		},
+		{
+			"key": "field_66d18dfb9ccbe",
+			"label": "Socials",
+			"name": "socials",
+			"aria-label": "",
+			"type": "repeater",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"layout": "block",
+			"pagination": 0,
+			"min": 0,
+			"max": 0,
+			"collapsed": "",
+			"button_label": "Add Social",
+			"rows_per_page": 20,
+			"sub_fields": [
+				{
+					"key": "field_66e2cedc2578e",
+					"label": "Social Name",
+					"name": "social_name",
+					"aria-label": "",
+					"type": "text",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "30",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"maxlength": "",
+					"allow_in_bindings": 0,
+					"placeholder": "",
+					"prepend": "",
+					"append": "",
+					"parent_repeater": "field_66d18dfb9ccbe"
+				},
+				{
+					"key": "field_66d18e069ccbf",
+					"label": "Url",
+					"name": "url_social",
+					"aria-label": "",
+					"type": "url",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "50",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"allow_in_bindings": 0,
+					"placeholder": "",
+					"parent_repeater": "field_66d18dfb9ccbe"
+				},
+				{
+					"key": "field_66d18e159ccc0",
+					"label": "Icon",
+					"name": "icon_social",
+					"aria-label": "",
+					"type": "s_tier_icons",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "20",
+						"class": "",
+						"id": ""
+					},
+					"allow_in_bindings": 0,
+					"font_size": 14,
+					"parent_repeater": "field_66d18dfb9ccbe"
+				}
+			]
+		},
+		{
+			"key": "field_66e2cf2eec5ce",
+			"label": "Socials",
+			"name": "socials",
+			"aria-label": "",
+			"type": "clone",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"clone": ["group_66a90baaacf89"],
+			"display": "seamless",
+			"layout": "block",
+			"prefix_label": 0,
+			"prefix_name": 0
+		},
+		{
+			"key": "field_6661f7533f5ca",
+			"label": "Site Icons",
+			"name": "",
+			"aria-label": "",
+			"type": "tab",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"placement": "left",
+			"endpoint": 0,
+			"selected": 0
+		},
+		{
+			"key": "field_665c95cce31b4",
+			"label": "Site Icons",
+			"name": "theme_icons",
+			"aria-label": "",
+			"type": "gallery",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"return_format": "id",
+			"library": "all",
+			"min": "",
+			"max": "",
+			"min_width": "",
+			"min_height": "",
+			"min_size": "",
+			"max_width": "",
+			"max_height": "",
+			"max_size": "",
+			"mime_types": "svg",
+			"insert": "append",
+			"preview_size": "thumbnail"
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "options_page",
+				"operator": "==",
+				"value": "site-general-settings"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"label_placement": "top",
+	"instruction_placement": "label",
+	"hide_on_screen": "",
+	"active": true,
+	"description": "",
+	"show_in_rest": 0,
+	"modified": 1727607698
+}

@@ -1,0 +1,39 @@
+@import "vendor/normalize";
+@import "vendor/fonts";
+@import "vars-mixins";
+@import "files/globals";
+
+//components
+@import "components/intro";
+@import "components/buttons";
+@import "components/background";
+@import "components/columns";
+
+@import "files/archive";
+
+//template parts
+@import "template-parts/socials";
+@import "template-parts/contact-info";
+@import "template-parts/breadcrumbs";
+
+//blocks
+@import "blocks/home-hero";
+@import "blocks/home-carousel";
+@import "blocks/cta";
+@import "blocks/customer-logos";
+@import "blocks/testimonials";
+@import "blocks/our-mission";
+@import "blocks/about-us";
+@import "blocks/accordion";
+@import "blocks/technical-details";
+@import "blocks/contact";
+@import "blocks/inner-hero";
+@import "blocks/our-history";
+@import "blocks/products";
+@import "blocks/product-action";
+@import "blocks/single-product";
+
+@import "files/nav";
+@import "files/nav-mobile";
+@import "files/footer";
+@import "files/search";

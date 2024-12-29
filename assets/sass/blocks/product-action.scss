@@ -1,0 +1,14 @@
+.st-product-action {
+	background: var(--bg-1);
+
+	.st-product-action__video {
+		text-align: center;
+
+		iframe {
+			width: 1280px;
+			max-width: 100%;
+			height: auto;
+			aspect-ratio: 13 / 5.5;
+		}
+	}
+}

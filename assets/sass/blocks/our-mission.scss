@@ -1,0 +1,74 @@
+.st-mission {
+	.st-mission__wrap {
+		@include desk-min {
+			width: 91%;
+			margin-inline: auto;
+		}
+	}
+
+	.b-title {
+		margin-bottom: 9rem;
+	}
+
+	.st-missions__all {
+		@include flex-col;
+		align-items: center;
+		gap: 6rem;
+
+		@include desk-min {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		@include limbo-max {
+			text-align: center;
+		}
+	}
+
+	.st-mission {
+		max-width: 700px;
+
+		@include desk-min {
+			flex: 0 1 400px;
+			max-width: unset;
+		}
+
+		svg {
+			// width: 60px;
+			// height: 60px;
+			width: 6rem;
+			height: 6rem;
+		}
+
+		.st-mission__title {
+			font-weight: 700;
+			color: var(--color-1);
+			margin-block: 13px;
+			font-size: 24px;
+			line-height: 1.4;
+
+			@include desk-min {
+				font-size: 27px;
+			}
+
+			@include md-desk-min {
+				margin-block: 25px 12px;
+			}
+		}
+
+		.st-mission__desc {
+			font-size: 20px;
+			line-height: 1.4;
+			color: var(--color-2);
+
+			@include md-desk-min {
+				font-size: 22px;
+			}
+		}
+	}
+
+	.btns {
+		justify-content: center;
+	}
+}

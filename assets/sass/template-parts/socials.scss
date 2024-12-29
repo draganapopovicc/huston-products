@@ -1,0 +1,18 @@
+.st-socials {
+	display: flex;
+	align-items: center;
+	gap: 17px;
+
+	.st_icon {
+		display: flex;
+		align-items: center;
+		gap: 10px 25px;
+		color: var(--white);
+		transition: var(--st);
+		line-height: 1;
+
+		span {
+			display: none;
+		}
+	}
+}

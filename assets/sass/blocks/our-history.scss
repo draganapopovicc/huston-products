@@ -1,0 +1,68 @@
+.st-history {
+	.st-history__wrap {
+		@include flex-col;
+		gap: 7rem;
+
+		@include limbo-min {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		@include mob-only {
+			padding-inline: 0;
+		}
+	}
+
+	.b-title {
+		align-items: flex-start;
+		text-align: left;
+		margin-bottom: 0;
+
+		@include limbo-min {
+			flex: 1;
+		}
+
+		@include mob-only {
+			padding-inline: 22px;
+		}
+
+		.b-title__main {
+			@include md-desk-min {
+				font-size: 5.8rem;
+			}
+		}
+
+		.b-title__intro {
+			margin-top: 2rem;
+
+			@include md-desk-min {
+				margin-top: 1rem;
+				width: 90%;
+				font-size: 22px;
+			}
+
+			p {
+				&:not(:last-child) {
+					margin-bottom: 3rem;
+				}
+			}
+		}
+	}
+
+	.st-history__image {
+		@include limbo-min {
+			flex: 1;
+			order: -1;
+		}
+	}
+
+	.st-history__image-desc {
+		font-size: 20px;
+		line-height: 1.3;
+		font-style: italic;
+		margin-top: 4rem;
+		text-align: center;
+		padding-inline: 3rem;
+		color: var(--color-2);
+	}
+}

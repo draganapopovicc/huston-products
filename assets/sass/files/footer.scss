@@ -1,0 +1,322 @@
+.site-footer {
+	color: var(--white);
+	background: var(--white);
+
+	.footer__top {
+		padding-block: 8rem;
+	}
+
+	//wrapper
+	.footer__wrapper {
+		@include flex-col;
+		align-items: center;
+		gap: 6rem;
+
+		@include limbo-min {
+			align-items: unset;
+		}
+
+		@include desk-min {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-direction: row;
+			gap: 7rem;
+		}
+
+		@include lg-desk-min {
+			gap: 10rem;
+		}
+	}
+
+	.footer__logo {
+		@include limbo-max {
+			order: 3;
+			text-align: center;
+			margin-top: 25px;
+		}
+
+		img {
+			height: auto;
+			width: 80px;
+		}
+	}
+
+	.footer__box-wrap {
+		@include flex-col;
+		gap: 1rem;
+		width: 100%;
+		max-width: 600px;
+
+		@include limbo-min {
+			flex-direction: row;
+			max-width: unset;
+			justify-content: space-between;
+		}
+
+		@include desk-min {
+			width: unset;
+			gap: 4rem;
+			flex: 1;
+		}
+
+		@include lg-desk-min {
+			gap: 8rem;
+		}
+	}
+
+	.footer__box {
+		position: relative;
+
+		@include limbo-max {
+			width: 100%;
+		}
+
+		.menu {
+			@include tab-max {
+				display: none;
+			}
+		}
+
+		.footer__box-message {
+			padding: 1rem;
+			padding-left: 0;
+
+			@include tab-max {
+				margin-left: 15px;
+			}
+		}
+
+		.footer__box-title {
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 35px;
+			color: var(--color-1);
+			margin-bottom: 18px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			@include md-desk-min {
+				font-size: 22px;
+			}
+
+			.footer__box-title-svg {
+				text-align: right;
+				flex: 0 0 4rem;
+				cursor: pointer;
+				transition: var(--st);
+
+				&.active {
+					transform: rotate3d(1, 0, 0, 180deg);
+				}
+
+				@include limbo-min {
+					display: none;
+				}
+
+				svg {
+					width: 3.2rem;
+				}
+			}
+		}
+
+		ul {
+			@include clean-list;
+
+			@include tab-max {
+				margin-left: 15px;
+				margin-bottom: 3rem;
+			}
+
+			li {
+				font-size: 19px;
+				color: var(--color-2);
+				line-height: 1.4;
+
+				@include md-desk-min {
+					font-size: 21px;
+				}
+			}
+
+			a {
+				transition: var(--st);
+				padding: 0.7rem;
+				padding-left: 0;
+				width: 100%;
+
+				@include tab-max {
+					padding: 1rem 0.5rem;
+				}
+
+				&:hover {
+					color: var(--color-1);
+				}
+			}
+		}
+
+		&.footer__box--contact {
+			@include tab-max {
+				margin-top: 4rem;
+				text-align: center;
+
+				.footer__box-title {
+					display: inline-block;
+				}
+
+				.st_contact-info {
+					align-items: center;
+					margin-bottom: 0;
+				}
+			}
+
+			.footer__box-message {
+				&:hover {
+					color: var(--color-1);
+				}
+			}
+		}
+	}
+
+	//btns
+	.btns {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+
+		@include limbo-max {
+			order: 2;
+		}
+
+		@include desk-min {
+			align-items: flex-start;
+			flex-shrink: 0;
+		}
+
+		@include mob-only {
+			width: 100%;
+		}
+
+		.btn {
+			gap: 3rem;
+			position: relative;
+			// min-width: 33rem;
+			min-width: 27rem;
+
+			@include limbo-min {
+				min-width: 27rem;
+			}
+		}
+	}
+
+	//contact info
+	ul.st_contact-info {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 5px;
+		gap: 2rem;
+
+		.address,
+		svg {
+			display: none;
+		}
+
+		.phone {
+			order: 5;
+		}
+
+		li {
+			a {
+				color: var(--color-1);
+				transition: var(--st);
+				font-size: 19px;
+
+				@include md-desk-min {
+					font-size: 21px;
+				}
+
+				&:hover {
+					color: var(--color-2);
+				}
+			}
+		}
+	}
+
+	.footer__box-message {
+		display: block;
+		font-size: 20px;
+		// line-height: 42px;
+		line-height: 1.4;
+		color: var(--color-2);
+		transition: var(--st);
+
+		@include desk-min {
+			font-size: 22px;
+		}
+	}
+
+	.footer__bottom {
+		padding-bottom: 30px;
+
+		@include limbo-min {
+			padding-block: 0;
+		}
+
+		.footer__wrap {
+			@include flex-col;
+			gap: 5rem;
+
+			@include limbo-min {
+				flex-direction: row;
+				justify-content: space-between;
+				border-top: 1px solid var(--color-4);
+				padding-block: 34px;
+				padding-inline: 10px;
+			}
+		}
+
+		.footer__socials {
+			@include flex-center;
+			gap: 35px;
+
+			@include tab-max {
+				order: -1;
+			}
+
+			a {
+				color: var(--color-1);
+			}
+
+			svg {
+				width: 33px;
+				height: 36px;
+			}
+
+			.st-socials {
+				.st_icon {
+					&:hover {
+						transform: scale(1.2);
+					}
+				}
+			}
+		}
+
+		.footer__copyright {
+			color: var(--color-2);
+			font-size: 18px;
+			line-height: 1.4;
+			text-align: center;
+
+			@include limbo-min {
+				display: flex;
+				align-items: center;
+				gap: 13px;
+			}
+
+			@include desk-min {
+				font-size: 20px;
+			}
+		}
+	}
+}

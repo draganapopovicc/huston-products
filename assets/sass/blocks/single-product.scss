@@ -1,0 +1,164 @@
+.st-single-product {
+	.st-single-product__wrap {
+		display: grid;
+		gap: 5rem;
+
+		@include limbo-min {
+			grid-template-columns: 1fr 1.4fr;
+			align-items: flex-start;
+		}
+
+		@include desk-min {
+			gap: 10rem;
+		}
+
+		@include mob-only {
+			padding-inline: 0;
+		}
+	}
+
+	.b-title {
+		align-items: flex-start;
+		text-align: left;
+
+		.b-title__intro {
+			p {
+				&:not(:last-child) {
+					margin-bottom: 2rem;
+				}
+			}
+		}
+	}
+	.st-single-product__gallery {
+		&:hover {
+			.dot {
+				height: 12px;
+			}
+		}
+	}
+	.st-single-product__text {
+		@include mob-only {
+			// padding-inline: 22px;
+		}
+
+		@include md-desk-min {
+			width: 90%;
+		}
+	}
+
+	.st-single-product__buttons {
+		display: inline-grid;
+		gap: 2rem;
+
+		@include mob-only {
+			display: grid;
+		}
+
+		.btn {
+			text-align: left;
+
+			@include tab-max {
+				min-width: 25rem;
+				gap: 4rem;
+			}
+
+			@include mob-only {
+				min-width: unset;
+				width: 100%;
+				gap: 3rem;
+			}
+		}
+
+		.btn-download {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			justify-content: space-between;
+			gap: 2rem;
+			max-height: 68px;
+			width: 100%;
+
+			svg {
+				height: 2.4rem;
+				width: 2.4rem;
+			}
+		}
+
+		&.row {
+			@include tab-min {
+				display: inline-grid;
+				grid-template-columns: auto auto;
+			}
+
+			@include tab-only {
+				.btn {
+					width: 100%;
+				}
+			}
+		}
+
+		&.column {
+			.btns {
+				@include tab-min {
+					display: inline-grid;
+					grid-template-columns: auto auto;
+				}
+			}
+		}
+	}
+
+	//Flickity Slider
+	.flickity-viewport {
+		background: #f4f4f4;
+	}
+
+	.carousel-cell {
+		width: 100%;
+		overflow: hidden;
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		&.is-nav-selected {
+			background: #ed2;
+		}
+	}
+
+	.flickity-page-dots {
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 20px;
+		z-index: 5;
+	}
+
+	.flickity-page-dots {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		.dot {
+			width: 45px;
+			height: 8px;
+			background-color: rgba(0, 0, 0, 0.501);
+			border-radius: 0;
+			transition: var(--st);
+			cursor: pointer;
+			@include desk-min {
+				width: 55px;
+				height: 6px;
+			}
+
+			&::marker {
+				content: none;
+			}
+
+			&.is-selected {
+				background: var(--color-1);
+			}
+		}
+	}
+}
